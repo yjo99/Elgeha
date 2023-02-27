@@ -79,9 +79,9 @@ public class User  implements java.io.Serializable {
     public void setUserId(int userId) {
         this.userId = userId;
     }
-
-@ManyToOne(fetch=FetchType.LAZY)
-    @JoinColumn(name="addressId", nullable=false)
+    
+    @ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="addressId", nullable=true)
     public Address getAddress() {
         return this.address;
     }
