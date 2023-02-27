@@ -100,10 +100,10 @@ public class Address implements java.io.Serializable {
         this.floorNo = floorNo;
     }
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "address")
-    public Set<User> getUsers() {
-        return this.users;
-    }
+    // @OneToMany(fetch = FetchType.LAZY, mappedBy = "address")
+    // public Set<User> getUsers() {
+    //     return this.users;
+    // }
 
     public void setUsers(Set<User> users) {
         this.users = users;

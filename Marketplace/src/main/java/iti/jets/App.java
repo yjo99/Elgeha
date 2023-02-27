@@ -7,7 +7,6 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.orm.jpa.JpaTransactionManager;
 
-
 import iti.jets.repo.daoImplementation.UserDaoImpl;
 import iti.jets.repo.daoInterfaces.ProductDao;
 import iti.jets.repo.daoInterfaces.UserDao;
@@ -35,8 +34,6 @@ public class App {
         u.setGender("m");
         u.setPassword("123123123");
         u.setFirstName("hamza");
-
-
         uDao.save(u);
     }
 }

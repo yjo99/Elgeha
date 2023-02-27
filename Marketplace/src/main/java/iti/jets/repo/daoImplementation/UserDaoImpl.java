@@ -6,6 +6,7 @@ import iti.jets.repo.entities.User;
 import jakarta.persistence.EntityManager;
 import jakarta.persistence.PersistenceContext;
 import jakarta.persistence.PersistenceContextType;
+
 // @Transactional
 public class UserDaoImpl implements UserDao {
 
@@ -15,7 +16,6 @@ public class UserDaoImpl implements UserDao {
     @Override
     @Transactional
     public void save(User user) {
-        System.out.println("->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>");
         entityManager.persist(user);
-     };
+    };
 }
