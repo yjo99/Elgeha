@@ -48,6 +48,12 @@ public class User  implements java.io.Serializable {
         this.email = email;
         this.password = password;
     }
+    public User(String firstName, String lastName, String email, String password) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.email = email;
+        this.password = password;
+    }
     public User(int userId, Address address, String firstName, String lastName, String gender, String phone, String email, String password, String creditCard, Set<Userorderproduct> userorderproducts, Set<Userreviewproduct> userreviewproducts) {
        this.userId = userId;
        this.address = address;
