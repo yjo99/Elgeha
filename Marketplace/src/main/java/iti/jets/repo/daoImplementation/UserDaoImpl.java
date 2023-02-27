@@ -12,8 +12,9 @@ public class UserDaoImpl implements UserDao {
     EntityManager entityManager ; 
 
     @Override
-    @Transactional
+    // @Transactional
     public void save(User user) {
-        System.out.println(entityManager);
+      System.out.println(entityManager.find(User.class,1));
+
     };
 }
