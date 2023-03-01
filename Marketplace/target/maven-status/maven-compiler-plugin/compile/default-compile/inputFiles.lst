@@ -1,15 +1,28 @@
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/ProductDaoImpl.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/Image.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/UserDaoImpl.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/App.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/Category.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/UserreviewproductId.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/Userorderproduct.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/Product.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/Address.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/User.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/Userreviewproduct.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/entities/UserorderproductId.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/UserDao.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/ProductDao.java
-/home/hazma/MywoRk/ITI/G_project/Marketplace/Marketplace/src/main/java/iti/jets/config/DataBaseConfig.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/API/Category.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/mappers/CategoryMapper.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/AddressDaoImpl.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/UserDao.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/UserreviewproductId.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/CategoryDaoImpl.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/ProductDao.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/Product.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/App.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/Category.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/Userreviewproduct.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/mappers/ProductCategory.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/User.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/ImageDao.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/DTO/Product.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/UserorderproductId.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/Userorderproduct.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/DTO/Category.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/AddressDao.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/ProductDaoImpl.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/ImageDaoImpl.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoInterfaces/CategoryDao.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/API/Product.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/repo/daoImplementation/UserDaoImpl.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/mappers/ProductMapper.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/DTO/ProductCategory.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/Address.java
+/home/hazma/MywoRk/ITI/G_project (copy)/Marketplace/Marketplace/src/main/java/iti/jets/entities/Image.java

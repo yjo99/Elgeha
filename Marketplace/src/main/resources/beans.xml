@@ -1,14 +1,14 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:tx="http://www.springframework.org/schema/tx"
-    xmlns:aop="http://www.springframework.org/schema/aop"
-    xmlns:context="http://www.springframework.org/schema/context"
-    xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd
-                        http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd
-                        http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
-                        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
->
+  xmlns:tx="http://www.springframework.org/schema/tx"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xmlns:aop="http://www.springframework.org/schema/aop"
+  xmlns:context="http://www.springframework.org/schema/context"
+  xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                      http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+                      http://www.springframework.org/schema/context https://www.springframework.org/schema/context/spring-context.xsd
+                      http://www.springframework.org/schema/tx https://www.springframework.org/schema/tx/spring-tx.xsd">
+
+
 
     <context:property-placeholder location="classpath:Connection.properties" />
     <context:annotation-config />
@@ -29,7 +29,7 @@
     <bean id="entityManagerFactory"
         class="org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean">
         <property name="dataSource" ref="datasource" />
-        <property name="packagesToScan" value="iti.jets.repo.entities" />
+        <property name="packagesToScan" value="iti.jets.entities" />
         <property name="persistenceProvider">
             <bean class="org.hibernate.jpa.HibernatePersistenceProvider"></bean>
         </property>
@@ -40,5 +40,9 @@
             </props>
         </property>
     </bean>
-    <bean id="userdao" class="iti.jets.repo.daoImplementation.UserDaoImpl" />
+    <bean id="userDao" class="iti.jets.repo.daoImplementation.UserDaoImpl" />
+    <bean id="productDao" class="iti.jets.repo.daoImplementation.ProductDaoImpl" />
+    <bean id="categoryDao" class="iti.jets.repo.daoImplementation.CategoryDaoImpl"/>
+    <bean id="addressDao" class="iti.jets.repo.daoImplementation.AddressDaoImpl"/>
+    <bean id="imageDao" class="iti.jets.repo.daoImplementation.ImageDaoImpl"/>
 </beans>
