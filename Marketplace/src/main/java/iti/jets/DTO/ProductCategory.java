@@ -1,4 +1,4 @@
-package iti.jets.DTO;
+package iti.jets.dto;
 
 public class ProductCategory {
     private String productName;

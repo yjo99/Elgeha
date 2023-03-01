@@ -1,4 +1,4 @@
-package iti.jets.API;
+package iti.jets.api;
 
 import jakarta.ws.rs.Produces;
 
@@ -19,13 +19,13 @@ public class Product {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public iti.jets.DTO.Product getProduct(@PathParam("id") String id) {
+    public iti.jets.dto.Product getProduct(@PathParam("id") String id) {
         return new iti.jets.mappers.ProductMapper().getProduct(Integer.parseInt(id));
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<iti.jets.DTO.Product> getProducts() {
+    public List<iti.jets.dto.Product> getProducts() {
         return new iti.jets.mappers.ProductMapper().getProducts();
     }
 
@@ -38,7 +38,7 @@ public class Product {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void insert(iti.jets.DTO.Product p) {
+    public void insert(iti.jets.dto.Product p) {
         new iti.jets.mappers.ProductMapper().insert(p);
     }
 

@@ -1,4 +1,4 @@
-package iti.jets.API;
+package iti.jets.api;
 
 import jakarta.ws.rs.Path;
 
