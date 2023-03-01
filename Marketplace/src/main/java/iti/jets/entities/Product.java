@@ -67,7 +67,7 @@ public class Product  implements java.io.Serializable {
         this.productId = productId;
     }
 
-    @ManyToOne(fetch=FetchType.EAGER)
+@ManyToOne(fetch=FetchType.EAGER)
     @JoinColumn(name="categoryId", nullable=true)
     public Category getCategory() {
         return this.category;

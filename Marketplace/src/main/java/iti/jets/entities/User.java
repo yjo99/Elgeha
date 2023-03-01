@@ -28,8 +28,8 @@ public class User implements java.io.Serializable {
     private String email;
     private String password;
     private String creditCard;
-   private Set<Userorderproduct> userorderproducts = new HashSet<Userorderproduct>(0);
-   private Set<Userreviewproduct> userreviewproducts = new HashSet<Userreviewproduct>(0);
+    private Set<Userorderproduct> userorderproducts = new HashSet<Userorderproduct>(0);
+    private Set<Userreviewproduct> userreviewproducts = new HashSet<Userreviewproduct>(0);
 
     public User() {
     }
@@ -43,7 +43,7 @@ public class User implements java.io.Serializable {
         this.password = password;
     }
 
-    public User(int id,String firstName, String lastName, String email, String password) {
+    public User(int id, String firstName, String lastName, String email, String password) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
@@ -63,7 +63,7 @@ public class User implements java.io.Serializable {
         this.email = email;
         this.password = password;
         this.creditCard = creditCard;
-       this.userorderproducts = userorderproducts;
+        this.userorderproducts = userorderproducts;
         this.userreviewproducts = userreviewproducts;
     }
 

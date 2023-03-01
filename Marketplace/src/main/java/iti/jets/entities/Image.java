@@ -48,8 +48,8 @@ public class Image implements java.io.Serializable {
         this.imageId = imageId;
     }
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "Product_idProduct", nullable = true)
+@ManyToOne(fetch=FetchType.LAZY)
+    @JoinColumn(name="Product_idProduct", nullable=true)
     public Product getProduct() {
         return this.product;
     }
