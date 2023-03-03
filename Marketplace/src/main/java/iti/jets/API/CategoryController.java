@@ -1,4 +1,4 @@
-package iti.jets.api;
+package iti.jets.API;
 
 import jakarta.ws.rs.Produces;
 import java.util.List;
@@ -14,13 +14,13 @@ public class CategoryController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public iti.jets.dto.CategoryDTO getCategory(@PathParam("id") int id) {
+    public iti.jets.DTO.CategoryDTO getCategory(@PathParam("id") int id) {
         return new iti.jets.mappers.CategoryMapper().getCategory(id);
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<iti.jets.dto.CategoryDTO> getCategorys() {
+    public List<iti.jets.DTO.CategoryDTO> getCategorys() {
         return new iti.jets.mappers.CategoryMapper().getCategorys();
     }
 

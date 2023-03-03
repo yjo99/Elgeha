@@ -7,9 +7,9 @@ public class ProductCategory {
          
         pMapper = new ProductMapper();
     }
-    public iti.jets.dto.ProductCategoryDTO getProdcutCat(int pId)
+    public iti.jets.DTO.ProductCategoryDTO getProdcutCat(int pId)
     {
-        return new iti.jets.dto.ProductCategoryDTO(pMapper.getProduct(pId).getProductName(),pMapper.getProduct(pId).getCatName());
+        return new iti.jets.DTO.ProductCategoryDTO(pMapper.getProduct(pId).getProductName(),pMapper.getProduct(pId).getCatName());
     }
     
 }

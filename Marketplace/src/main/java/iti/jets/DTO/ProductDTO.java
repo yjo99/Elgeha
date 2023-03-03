@@ -1,4 +1,4 @@
-package iti.jets.dto;
+package iti.jets.DTO;
 
 import iti.jets.entities.Category;
 
