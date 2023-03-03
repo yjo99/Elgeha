@@ -1,12 +1,9 @@
 package iti.jets;
-
 import javax.sql.DataSource;
-
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.orm.jpa.JpaTransactionManager;
-
 import iti.jets.entities.Address;
 import iti.jets.entities.Category;
 import iti.jets.entities.Image;

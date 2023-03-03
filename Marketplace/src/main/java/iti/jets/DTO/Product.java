@@ -4,7 +4,7 @@ import iti.jets.entities.Category;
 
 public class Product {
     private int productId;
-    private String CatName;
+    private String catName;
     private String productName;
     private String productDescription;
     private int productAmount;
@@ -54,10 +54,10 @@ public class Product {
     }
 
     public String getCatName() {
-        return CatName;
+        return catName;
     }
 
     public void setCatName(String catName) {
-        CatName = catName;
+        catName = catName;
     }
 }
