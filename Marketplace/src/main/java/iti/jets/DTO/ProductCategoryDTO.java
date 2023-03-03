@@ -1,10 +1,10 @@
 package iti.jets.dto;
 
-public class ProductCategory {
+public class ProductCategoryDTO {
     private String productName;
     private String categoryName;
 
-    public ProductCategory(String productName, String categoryName) {
+    public ProductCategoryDTO(String productName, String categoryName) {
         this.productName = productName;
         this.categoryName = categoryName;
     }

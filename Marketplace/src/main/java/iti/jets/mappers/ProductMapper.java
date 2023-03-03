@@ -6,7 +6,8 @@ import java.util.List;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import iti.jets.dto.Product;
+import iti.jets.dto.ProductDTO;
+import iti.jets.entities.Product;
 import iti.jets.repo.daoImplementation.ProductDaoImpl;
 import iti.jets.repo.daoInterfaces.ProductDao;
 
@@ -19,10 +20,10 @@ public class ProductMapper {
         context = new ClassPathXmlApplicationContext("beans.xml");
     }
 
-    public Product getProduct(int id) {
+    public ProductDTO getProduct(int id) {
 
         iti.jets.entities.Product pEntity = context.getBean("productDao", ProductDao.class).selectProduct(id);
-        iti.jets.dto.Product pDTO = new Product();
+        iti.jets.dto.ProductDTO pDTO = new ProductDTO();
         pDTO.setCatName(pEntity.getCategory().getCategoryName());
         pDTO.setPrice(pEntity.getPrice());
         pDTO.setProductAmount(pEntity.getProductAmount());
@@ -32,11 +33,11 @@ public class ProductMapper {
         return pDTO;
     }
 
-    public List<Product> getProducts() {
+    public List<ProductDTO> getProducts() {
         int count = 0;
-        List<iti.jets.dto.Product> pDTO = new ArrayList<>();
-        for (iti.jets.entities.Product p : context.getBean("productDao", ProductDao.class).selectProducts()) {
-            pDTO.add(new iti.jets.dto.Product());
+        List<ProductDTO> pDTO = new ArrayList<>();
+        for (Product p : context.getBean("productDao", ProductDao.class).selectProducts()) {
+            pDTO.add(new iti.jets.dto.ProductDTO());
             pDTO.get(count).setCatName(p.getCategory().getCategoryName());
             pDTO.get(count).setPrice(p.getPrice());
             pDTO.get(count).setProductAmount(p.getProductAmount());
@@ -53,7 +54,7 @@ public class ProductMapper {
         ;
     }
 
-    public void insert(iti.jets.dto.Product p) {
+    public void insert(iti.jets.dto.ProductDTO p) {
         iti.jets.entities.Product eProduct = new iti.jets.entities.Product();
         eProduct.setPrice(p.getPrice());
         eProduct.setProductName(p.getProductName());

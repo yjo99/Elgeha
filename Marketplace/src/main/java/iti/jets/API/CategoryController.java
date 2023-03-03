@@ -9,18 +9,18 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/category")
-public class Category {
+public class CategoryController {
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public iti.jets.dto.Category getCategory(@PathParam("id") int id) {
+    public iti.jets.dto.CategoryDTO getCategory(@PathParam("id") int id) {
         return new iti.jets.mappers.CategoryMapper().getCategory(id);
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<iti.jets.dto.Category> getCategorys() {
+    public List<iti.jets.dto.CategoryDTO> getCategorys() {
         return new iti.jets.mappers.CategoryMapper().getCategorys();
     }
 

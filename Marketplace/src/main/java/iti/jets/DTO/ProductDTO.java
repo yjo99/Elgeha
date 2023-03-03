@@ -2,7 +2,7 @@ package iti.jets.dto;
 
 import iti.jets.entities.Category;
 
-public class Product {
+public class ProductDTO {
     private int productId;
     private String catName;
     private String productName;
@@ -10,7 +10,7 @@ public class Product {
     private int productAmount;
     private float price;
 
-    public Product() {
+    public ProductDTO() {
     }
 
     public int getProductId() {

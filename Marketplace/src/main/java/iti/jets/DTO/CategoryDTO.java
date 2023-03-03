@@ -1,6 +1,6 @@
 package iti.jets.dto;
 
-public class Category {
+public class CategoryDTO {
     private int categoryId;
     private String categoryName;
 

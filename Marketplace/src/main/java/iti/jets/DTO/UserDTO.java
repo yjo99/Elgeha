@@ -2,7 +2,7 @@ package iti.jets.dto;
 
 import iti.jets.entities.Address;
 
-public class User {
+public class UserDTO {
     private int userId;
     private Address address;
     private String firstName;

@@ -15,17 +15,17 @@ import jakarta.ws.rs.PathParam;
 import jakarta.ws.rs.core.MediaType;
 
 @Path("/prodcut")
-public class Product {
+public class ProductController {
     @GET
     @Produces(MediaType.APPLICATION_JSON)
     @Path("{id}")
-    public iti.jets.dto.Product getProduct(@PathParam("id") String id) {
+    public iti.jets.dto.ProductDTO getProduct(@PathParam("id") String id) {
         return new iti.jets.mappers.ProductMapper().getProduct(Integer.parseInt(id));
     }
 
     @GET
     @Produces(MediaType.APPLICATION_JSON)
-    public List<iti.jets.dto.Product> getProducts() {
+    public List<iti.jets.dto.ProductDTO> getProducts() {
         return new iti.jets.mappers.ProductMapper().getProducts();
     }
 
@@ -38,7 +38,7 @@ public class Product {
 
     @POST
     @Consumes(MediaType.APPLICATION_JSON)
-    public void insert(iti.jets.dto.Product p) {
+    public void insert(iti.jets.dto.ProductDTO p) {
         new iti.jets.mappers.ProductMapper().insert(p);
     }
 
